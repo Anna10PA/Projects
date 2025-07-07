@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    gap: 20px;
+}
+/* title */
+h2 {
+    font-size: 3rem;
+    color: rgb(0, 135, 193);
+    text-shadow: 0px 0px 10px rgb(0, 75, 107);
+}
+/* user input things */
+input {
+    text-align: center;
+    padding: 5px 10px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    font-size:1rem;
+}
+
+button {
+    background: linear-gradient(to right, rgb(0, 97, 149), rgb(0, 162, 146));
+    padding: 5px 15px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 5px rgb(0, 60, 92),
+        0px 3px 10px rgb(0, 54, 48);
+    transform: translateY(3px)
+} 
+.enter {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    justify-content: space-around;
+    width:200px
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;
+    
+}
+/* dice */
+.dice {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative
+}
+.compiuter .button{
+    --color: red;
+    --hovered: rgb(106, 0, 0);
+}
+.user .button{
+    --color: rgb(0, 97, 149);
+    --hovered:  rgb(0, 135, 193);
+}
+.button {
+    height: 20px;
+    width: 20px;
+    background-color: var(--color);
+    border-radius: 50%;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.dice:hover .button {
+    background-color:var(--hovered)
+
+}
+
+.game {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    width:100%;
+    max-width:500px;
+    min-width: 200px;
+    justify-content: space-around;
+}
+
+/* 1 */
+.one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2 - 3*/
+.two-three .button:nth-child(1) {
+    bottom: 10px;
+    right: 10px
+}
+
+.two-three .button:nth-child(2) {
+    top: 10px;
+    left: 10px
+}
+
+/* 3 */
+.three .button:nth-child(3) {
+    top: 40%;
+    left: 39%
+}
+
+/* 4 - 5 */
+.four-five .button:nth-child(1) {
+    top: 10px;
+    left: 10px
+}
+
+.four-five .button:nth-child(2) {
+    top: 10px;
+    right: 10px
+}
+
+.four-five .button:nth-child(3) {
+    bottom: 10px;
+    right: 10px
+}
+
+.four-five .button:nth-child(4) {
+    bottom: 10px;
+    left: 10px
+}
+
+/* 5 */
+.five .button:nth-child(5) {
+    top: 40%;
+    left: 40%
+}
+
+/* 6 */
+.six .button:nth-child(1) {
+    top: 10px;
+    left: 10px;
+}
+
+.six .button:nth-child(2) {
+    top: 10px;
+    right: 10px;
+}
+
+.six .button:nth-child(3) {
+    top: 40%;
+    left: 10px
+}
+
+.six .button:nth-child(4) {
+    top: 40%;
+    right: 10px
+}
+
+.six .button:nth-child(5) {
+    bottom: 10px;
+    right: 10px
+}
+
+.six .button:nth-child(6) {
+    bottom: 10px;
+    left: 10px
+}
+
+/* curent */
+.dice {
+    display: none
+}
+#curent, #curentComp {
+    display:flex;
+}
